@@ -48,17 +48,23 @@ export const Home = ({text1, text2,  number}) => {
 
   return (
     <>
+        <div className='bod'>
         <div className='container'>
         <div className='upper'>
         <img className='first' src={arrow} alt='j'/>
         <img className='second' src={logo} alt='h'/>
         <h1>Help</h1>
 
+
+
+        
+
        
             
 
             
         </div>
+
         <div className='middle'>
             <div className='upp'>
             <div className='sort'>
@@ -69,12 +75,13 @@ export const Home = ({text1, text2,  number}) => {
             <p>UPI ID:9651596998@fam</p>
             </div>
             </div>
+            <div className='rup'>
             <h2>₹{number}
-            <img src={log} alt="Logo" style={{ width: '45px', height: '45px',
-             verticalAlign: 'middle',marginLeft:'8px' }} /> 
+            <img src={log} alt="Logo"  /> 
             </h2>
             <p>{`${day} ${monthName}, ${formattedTime}`}</p>
-            <h4>Ref. No XX 2717</h4>
+            <h4>Ref. No XX 2717 ▼</h4>
+            </div>
             <div className='btn'>
                 <button>Check Balance</button>
                 <button>Share</button>
@@ -85,6 +92,7 @@ export const Home = ({text1, text2,  number}) => {
         
             
         </div>
+        
         <div>
             <div className='aid'>
                 <img src={logo} alt='g'/>
@@ -100,7 +108,7 @@ export const Home = ({text1, text2,  number}) => {
             </div>
         </div>
 
-        <div className='offer'>
+         <div className='offer'>
             <div className='last'>
                 <img src={ten} alt='h'/>
                 <h5>Extra 10% OFF</h5>
@@ -121,9 +129,9 @@ export const Home = ({text1, text2,  number}) => {
                 <img src={fire} alt='h'/>
                 <h5>Fire Ball</h5>
             </div>
-        </div>
+        </div> 
 
-        <div className='add'>
+         <div className='add'>
             <div className='card'>
             <img src={winzo} alt='j'/>
             <h4>Play Winzo</h4>
@@ -139,10 +147,11 @@ export const Home = ({text1, text2,  number}) => {
             <h4>Please Order</h4>
                 
             </div>
-        </div>
+        </div> 
 
        
 
+        </div>
         </div>
         <audio ref={audioRef} src={sound} preload="auto" />
     </>

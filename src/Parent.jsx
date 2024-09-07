@@ -56,6 +56,7 @@ function ParentComponent() {
             value={inputText1} 
             onChange={handleInputChange} 
             placeholder="Short name"
+            maxlength="2"
           />
           <input 
             type="text" 
@@ -75,10 +76,15 @@ function ParentComponent() {
             Pay Now
           </button>
           <audio ref={audioRef} src={sound} preload="auto" />
+          <div className='creator'>
+        <p>Created By- Yadav Ji</p>
+      </div>
         </div>
       ) : (
         <Home text1={inputText1} text2={inputText2} number={number} />
       )}
+     
+      
     </div>
   );
 }
